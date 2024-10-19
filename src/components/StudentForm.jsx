@@ -2,22 +2,21 @@ import React, { useState } from 'react';
 import { TextField, Button, Container, Typography, Grid, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-// Update the BackgroundContainer without background image and smaller form
 const BackgroundContainer = styled('div')({
-  minHeight: '100vh',              // Ensures the container covers the full viewport height
+  minHeight: '100vh',              
   display: 'flex',
-  justifyContent: 'center',       // Center form horizontally
-  alignItems: 'center',           // Center form vertically
-  backgroundColor: '#f5f5f5',     // Use a light background color for the container
-  width: '100%',                   // Ensures it takes the full width of the viewport
+  justifyContent: 'center',       
+  alignItems: 'center',          
+  backgroundColor: '#f5f5f5',     
+  width: '100%',                  
 });
 
 const FormContainer = styled('div')({
-  backgroundColor: 'rgba(255, 255, 255, 0.9)',  // Slightly less transparent
+  backgroundColor: 'rgba(255, 255, 255, 0.9)',  
   padding: '40px',
   borderRadius: '8px',
-  width: '400px',  // Decreased form size to 400px
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',    // Light shadow
+  width: '400px',  
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',    
 });
 
 const StudentForm = () => {
@@ -65,7 +64,6 @@ const StudentForm = () => {
           </Typography>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={2}>
-              {/* Name Field */}
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -77,7 +75,6 @@ const StudentForm = () => {
                 />
               </Grid>
 
-              {/* Gender Field */}
               <Grid item xs={12}>
                 <FormControl fullWidth required>
                   <InputLabel>Gender</InputLabel>
@@ -93,7 +90,6 @@ const StudentForm = () => {
                 </FormControl>
               </Grid>
 
-              {/* Phone Number Field */}
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -105,7 +101,6 @@ const StudentForm = () => {
                 />
               </Grid>
 
-              {/* Course Field */}
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -117,7 +112,6 @@ const StudentForm = () => {
                 />
               </Grid>
 
-              {/* Email Id Field */}
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -129,7 +123,6 @@ const StudentForm = () => {
                 />
               </Grid>
 
-              {/* Date of Birth Field */}
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -143,7 +136,6 @@ const StudentForm = () => {
                 />
               </Grid>
 
-              {/* Address Field */}
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -155,7 +147,6 @@ const StudentForm = () => {
                 />
               </Grid>
 
-              {/* Submit and Cancel Buttons */}
               <Grid item xs={6}>
                 <Button
                   fullWidth
